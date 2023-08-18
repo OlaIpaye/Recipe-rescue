@@ -2,6 +2,10 @@
 $(document).ready(function () {
     // Pagination Controls
     const paginationButtons = $("#pagination-buttons");
+    const recipeModal = $("#recipeModal");
+    const modalTitle = $("#modalTitle");
+    const modalBody = $("#modalBody");
+    const modalBackdrop = $("#modalBackdrop"); 
 
     // Define a function to display recipes based on the provided data, page, and limit
     function displayRecipes(data, page, limit) {
@@ -16,7 +20,14 @@ $(document).ready(function () {
             const recipeDiv = $("<div>").addClass("col-md-4 mb-4");
             const card = $("<div>").addClass("card");
             const cardBody = $("<div>").addClass("card-body");
-            const title = $("<h5>").addClass("card-title").text(recipe.title);
+            const title = $("<h5>")
+                    .addClass("card-title")
+                    .text(recipe.title)
+                    .css("cursor", "pointer"); 
+                    title.click(function () {
+                        openModal(recipe.title, recipe.instructions); // Open modal on title click
+                    });
+
             const image = $("<img>").addClass("card-img-top").attr("src", recipe.image_url);
 
             cardBody.append(title);
@@ -26,6 +37,23 @@ $(document).ready(function () {
             resultsDiv.append(recipeDiv);
         }
     }
+
+    
+    // Function to display recipe details in the modal
+    function openModal(title, body) {
+        modalTitle.text(title);
+        modalBody.html(body);
+        recipeModal.css("display", "block");
+        modalBackdrop.css("display", "block");
+    }
+
+    // Close the modal when the close button is clicked
+    $(".close").click(function () {
+        recipeModal.css("display", "none");
+        modalBackdrop.css("display", "none"); 
+    });
+
+
 
     $("#searchButton").click(function () {
         const searchQuery = $("#searchInput").val();
