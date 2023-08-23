@@ -48,5 +48,25 @@ nav {
   #cocktailsButton:hover {
     transform: scale(1.1);
   }
+  #inputSearch {
+    width: 40%;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+  }
   
+  #searchInputArea {
+    padding: 10px 10px 10px 10px;
+    border-radius: 30px;
+  }
+  
+  
+  #searchBarButton {
+    border-radius: 30px;
+    background-color: black;
+    transition: 0.3;
+  }
+  
+  #searchBarButton:hover {
+    transform: scale(1.1);
+  }
+    
   
