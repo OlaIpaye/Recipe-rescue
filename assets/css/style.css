@@ -92,3 +92,13 @@ nav {
     min-height: 500px;
   }
   
+  #turkishHeader {
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/turkish21.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    min-height: 500px;
+  }
