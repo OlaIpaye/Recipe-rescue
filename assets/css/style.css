@@ -68,5 +68,16 @@ nav {
   #searchBarButton:hover {
     transform: scale(1.1);
   }
-    
+    /* ------------------Japanese Header-------- */
+#japaneseHeader {
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/Japanese\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+    min-height: 500px;
+  
+  }
   
