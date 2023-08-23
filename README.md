@@ -31,9 +31,24 @@ How our Recipe Rescue application came together:
 - Inital website design in Figma by Farah and Salma
 
 - Adding team collaboration in Github by Ola
+
   ![team collaboration in github](<assets/images/team collaboration in github.png>)
 
-- Generating API code by Rinkal
+* Generating API code by Rinkal
+
+  ![recipe API pop up modal](<assets/images/recipe API modal pop up.png>)
+
+## Features and Functionality of Recipe Rescue
+
+Our application is a recipe inspiration website and we wanted to offer users the ability to get healthy recipes quickly and easily.
+
+- Recipe Search Bar in middle of the homepage taking center stage:
+
+  ![recipe rescue search bar](<assets/images/recipe rescue search bar.png>)
+
+* Recipe cards displays after user searches for a recipe:
+
+image here
 
 ## Meet the team
 
@@ -41,7 +56,7 @@ We are a group of five, and our group name is called tech Storm.
 
 - Rinkal Patel
 - Oladimeji Ipaye
-- Vasile O
+- Vasile Orbu
 - Farah Boujana
 - Salma Abdulatif
 
