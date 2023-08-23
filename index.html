@@ -29,47 +29,146 @@
         </a>
         </div>
 
-<div class="container">
-      <h1 class="my-4">Recipe Search</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <input
-            type="text"
-            id="searchInput"
-            class="form-control mb-2"
-            placeholder="Enter a search query"
-          />
-          <button id="searchButton" class="btn btn-primary">Search</button>
-        </div>
-      </div>
-      <div class="row mt-4" id="results"></div>
-      <div id="pagination-buttons"></div>
+        <div class=" col-6 d-flex justify-content-end px-5">
+          <div class=" row ">
+            <button class=" navbar-toggler " type=" button" data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+              <ul class="nav nav-tabs my-3">
 
-      <!-- The Modal -->
-      <div class="modal" id="recipeModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title" id="modalTitle"></h4>
-              <button
-                type="button"
-                class="btn-close close"
-                data-bs-dismiss="modal"
-              ></button>
-            </div>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Meal</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item headerButton" data-value="breakfast" data-target="breakfastHeader"
+                      id="breakfastButton" href="#">Breakfast</a></li>
+                  <li><a class="dropdown-item headerButton" data-value="lunch" data-target="lunchHeader"
+                      id="lunchButton" href="#">Lunch</a>
+                  </li>
+                  <li><a class="dropdown-item headerButton" data-value="dinner" data-target="dinnerHeader"
+                      id="dinnerButton" href="#">Dinner</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item headerButton" data-value="dissert" data-target="dissertHeader"
+                      id="dissertButton" href="#">Dessert</a></li>
+                </ul>
+              </li>
 
-            <!-- Modal body -->
-            <div class="modal-body">Modal body..</div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-expanded="false">
+                  Cuisine</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item headerButton" data-value="italian" data-target="italianHeader"
+                      id="italianButton" href="#">Italian</a></li>
+                  <li><a class="dropdown-item headerButton" data-value="turkish" data-target="turkishHeader"
+                      id="turkishButton" href="#">Turkish</a></li>
+
+                  <li><a class="dropdown-item headerButton" data-value="indian" data-target="indianHeader"
+                      id="indianButton" href="#">Indian</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item headerButton" data-value="japanese" data-target="japaneseHeader"
+                      id="japaneseButton" href="#">Japanese</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-expanded="false">Drink Recipe</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item headerButton" data-target="cocktailsHeader" href="#">Cocktails</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Recipe Rescue <br>
+                  <p class="mx-2 my-1" style=" font-size: 8px; font-weight: bold;">INSPIRE, COOK, ENJOY</p>
+                </a>
+              </li>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-
-      <!-- Modal Backdrop -->
-      <div id="modalBackdrop" class="modal-backdrop"></div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
-</html>
+  </nav>
+
+</header>
+<!-- -----------------------------Header Image and Buttons ----------------- -->
+<div class="container-fluid row d-flex justify-content-center   " id="headerImg">
+
+  <div class="logo ">
+    <h1 id="welcome">Autumnal Elixir Blends for a Cozy Season</h1>
+
+    <button type="button" class="btn body-3 btn-lg my-3" id="cocktailsButton">
+      Unveil Autumn's Magic: Irresistible Cocktail Recipes
+    </button>
+
+  </div>
+  <div class="row flex justify-content-center">
+    <div class=" col-5 input-group  " id="inputSearch">
+      <input type="text" aria-label="Your favorite Recipe" placeholder="Your favorite recipe" class="form-control"
+        id="searchInputArea">
+      <button id="searchBarButton" class="btn btn-secondary">SEARCH</button>
+    </div>
+  </div>
+</div>
+
+ <!-- ---------------------------------------Header for Japanese Cuisine------------------------ -->
+ <div class="container-wrapper">
+  <div>
+    <section class="container-fluid row d-flex justify-content-center d-none" id="japaneseHeader">
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="row">
+          <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Japanese Recipes</h2> <br>
+          <p style="color: antiquewhite;">Explore the diverse world of Japanese cuisine beyond the familiar sushi and
+            teriyaki chicken with our
+            collection of
+            authentic recipes. Uncover step-by-step cooking guides that will help you recreate the finest ramen bowls,
+            crispy
+            tempura, succulent yakitori skewers, and indulge in the most exquisite Japanese desserts, all from the
+            comfort
+            of your
+            own home.</p>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- ---------------------------------INDIAN HEADER------------------ -->
+  <div>
+    <section class="container-fluid row d-flex justify-content-center d-none" id="indianHeader">
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="row">
+          <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Indian Recipes</h2> <br>
+          p style="color: antiquewhite;">Embark on a culinary journey through the vibrant flavors of Indian cuisine,
+              venturing far beyond the conventional
+              curries and samosas. Immerse yourself in a treasure trove of authentic recipes that unveil the heart and
+              soul
+              of Indian
+              cooking. Discover meticulous cooking instructions that empower you to craft intricate biryanis, aromatic
+              masalas, tender
+              tandoori kebabs, and delve into the realm of decadent Indian sweets that will transport your taste buds to
+              a
+              world of
+              pure delight, all from your very own kitchen sanctuary.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
