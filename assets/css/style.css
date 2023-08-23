@@ -80,4 +80,15 @@ nav {
     min-height: 500px;
   
   }
+
+  #indianHeader {
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/indian\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+    min-height: 500px;
+  }
   
