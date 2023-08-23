@@ -36,4 +36,17 @@ nav {
     text-align: center;
   
   }
+
+  #cocktailsButton {
+    padding: 13px 43px;
+    border-radius: 22px;
+    background-color: #d98e43;
+    color: #ffff;
+    transition: transform 0.3s;
+  }
+  
+  #cocktailsButton:hover {
+    transform: scale(1.1);
+  }
+  
   
