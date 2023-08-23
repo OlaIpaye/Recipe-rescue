@@ -15,5 +15,25 @@ nav {
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
   }
-    
+
+  #welcome {
+    font-weight: 500;
+    color: white;
+  }
+
+  /* -------------------Header------------- */
+#headerImg {
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/food1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 500px;
+    display: flex;
+  
+    align-items: center;
+    text-align: center;
+  
+  }
   
