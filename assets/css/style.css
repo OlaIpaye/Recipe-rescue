@@ -5,4 +5,10 @@ body {
     min-height: 100vh;
     background-color: #dbdde8;
   }
+
+  #imagesHeader {
+    width: 100%;
+    height: auto;
+  }
+  
   
