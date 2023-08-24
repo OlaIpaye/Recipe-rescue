@@ -78,3 +78,8 @@ $(document).ready(function () {
 
   //   --------------------------------End-----------
 });
+
+$(".save-icon").on("click", function () {
+  const dataIndex = $(this).data("index");
+  const selectedRecipe = results[dataIndex].recipe;
+});
