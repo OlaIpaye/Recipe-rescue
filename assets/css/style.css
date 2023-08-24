@@ -252,6 +252,99 @@ nav ul.nav li.nav-item a {
   transition: color 0.3;
 }
 
+nav ul.nav li.nav-item a {
+  color: rgba(215, 200, 191, 0.908);
+  font-weight: bold;
+  transition: color 0.3;
+}
+
+nav ul.nav li.nav-item a:hover {
+  color: rgb(107, 214, 214);
+}
+
+footer .row .col-4 .row .col-12 a svg {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+#FooterSignUp {
+  width: 60%;
+  margin-left: 9%;
+}
+
+#signUpFooterButton {
+  border-radius: 30px;
+  background-color: black;
+  transition: 0.3;
+  color: white;
+  margin-left: 5px;
+}
+
+#signUpFooterButton:hover {
+  transform: scale(1.1);
+}
+
+#SignUpFooter {
+  border-radius: 50px;
+  background-color: grey;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translatey(-5px);
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.position-relative {
+  position: relative;
+}
+
+.save-icon {
+  position: absolute;
+  top: 10px;
+
+  right: 10px;
+
+  font-size: 20px;
+  color: red;
+  transition: transform 0.3s ease;
+}
+
+.save-icon:hover {
+  transform: scale(1.2);
+}
+
+footer .row .col-4 .row .col-12 .list-unstyled a li {
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+footer .row .col-4 .row .col-12 .list-unstyled a li:hover {
+  transform: scale(1.1);
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+footer {
+  padding-bottom: 3%;
+}
+
+.icons {
+  margin: 3px 7px 3px 7px;
+  font-size: 26px;
+
+}
+
 
 
 /* ------model css start-------- */
