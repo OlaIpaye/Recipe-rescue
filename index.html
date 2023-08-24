@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-   
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Recipe Rescue</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-  <body>
-    <header class="container-fluid" id="header">
 
-      <!-- --------------Nav Bar -->
-      <nav class="navbar navbar-expand-lg row bg-dark border-bottom border-body" data-bs-theme="dark">
-        <div class="col-6 d-flex justify-content-start px-5">
-          <a href="">
-            <img id="FooterImage" src="./assets/images/footerLogo.png" alt="footerLogo">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Recipe Rescue</title>
+</head>
+
+<body>
+  <header class="container-fluid" id="header">
+
+    <!-- --------------Nav Bar -->
+    <nav class="navbar navbar-expand-lg row bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="col-6 d-flex justify-content-start px-5">
+        <a href="">
+          <img id="FooterImage" src="./assets/images/footerLogo.png" alt="footerLogo">
         </a>
-        </div>
+      </div>
 
-        <div class=" col-6 d-flex justify-content-end px-5">
-          <div class=" row ">
-            <button class=" navbar-toggler " type=" button" data-bs-toggle="collapse"
-              data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
-              <ul class="nav nav-tabs my-3">
+      <div class=" col-6 d-flex justify-content-end px-5">
+        <div class=" row ">
+          <button class=" navbar-toggler " type=" button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+            <ul class="nav nav-tabs my-3">
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                    aria-expanded="false">Meal</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item headerButton" data-value="breakfast" data-target="breakfastHeader"
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-expanded="false">Meal</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item headerButton" data-value="breakfast" data-target="breakfastHeader"
                       id="breakfastButton" href="#">Breakfast</a></li>
                   <li><a class="dropdown-item headerButton" data-value="lunch" data-target="lunchHeader"
                       id="lunchButton" href="#">Lunch</a>
@@ -80,7 +77,8 @@
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                   aria-expanded="false">Drink Recipe</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item headerButton" data-target="cocktailsHeader" href="#">Cocktails</a></li>
+                  <li><a class="dropdown-item headerButton" data-value="dissert" data-target="dissertHeader"
+                      href="#">Cocktails</a></li>
                 </ul>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Recipe Rescue <br>
@@ -91,263 +89,83 @@
             </ul>
           </div>
         </div>
+      </div>
+
+    </nav>
+
+  </header>
+  <!-- -----------------------------Header Image and Buttons ----------------- -->
+  <div class="container-fluid row d-flex justify-content-center   " id="headerImg">
+
+    <div class="logo ">
+      <h1 id="welcome">Autumnal Elixir Blends for a Cozy Season</h1>
+
+      <button data-value="drinks" data-target="cocktailsHeader" type="button"
+        class="btn body-3 btn-lg my-3 headerButton" id="cocktailsButton">
+        Unveil Autumn's Magic: Irresistible Cocktail Recipes
+      </button>
+
     </div>
-
-  </nav>
-
-</header>
-<!-- -----------------------------Header Image and Buttons ----------------- -->
-<div class="container-fluid row d-flex justify-content-center   " id="headerImg">
-
-  <div class="logo ">
-    <h1 id="welcome">Autumnal Elixir Blends for a Cozy Season</h1>
-
-    <button type="button" class="btn body-3 btn-lg my-3" id="cocktailsButton">
-      Unveil Autumn's Magic: Irresistible Cocktail Recipes
-    </button>
-
-  </div>
-  <div class="row flex justify-content-center">
-    <div class=" col-5 input-group  " id="inputSearch">
-      <input type="text" aria-label="Your favorite Recipe" placeholder="Your favorite recipe" class="form-control"
-        id="searchInput">
-      <button id="searchButton" class="btn btn-secondary">SEARCH</button>
+    <div class="row flex justify-content-center">
+      <div class=" col-5 input-group  " id="inputSearch">
+        <input type="text" aria-label="Your favorite Recipe" placeholder="Your favorite recipe" class="form-control"
+          id="searchInput">
+        <button id="searchButton" class="btn btn-secondary">SEARCH</button>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- ----------- display recipe and cockatil data---------- -->
-<div class="container">
-  <div class="row mt-4" id="cocktails">
-        
-  </div>
+  <!-- ----------- display recipe and cockatil data---------- -->
 
-  <div class="row mt-4" id="results">
 
-  </div>
- 
-  
-  <button id="prevButton" style="display: none;">Previous</button>
-  <button id="nextButton" style="display: none;">Next</button>
+  <!-- ----------- end conatiner for display recipe and cockatil data---------- -->
 
-    <!-- The Modal for recipe search detail---->
-    <div class="modal" id="recipeModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title" id="modalTitle"></h4>
-            <button type="button" class="btn-close close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <!-- <div id="totalNutrients"></div> -->
-
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <div id="image"></div>
-
-                  <div class="item-feature">
-                      <ul>
-                          <li>
-                              <div class="feature-wrap">
-                                  <div class="media">
-                                      <div class="feature-icon">
-                                        <i class="fa-regular fa-clock"></i>
-                                      </div>
-                                      <div class="media-body space-sm">
-                                          <div class="feature-title">PREP TIME</div>
-                                          <div class="feature-sub-title" id="totalTime"></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                              <div class="feature-wrap">
-                                  <div class="media">
-                                      <div class="feature-icon">
-                                        <i class="fas fa-utensils"></i>
-                                      </div>
-                                      <div class="media-body space-sm">
-                                          <div class="feature-title" >Cuisine TYpe</div>
-                                          <div class="feature-sub-title" id="cuisineType"></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                                                    
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                  <div class="nutrition-wrap">
-                      <h3 class="item-title"><i class="fas fa-info"></i>Nutrition</h3>
-                      <ul class="nutrition-list" id="totalNutrients">
-                          
-                      </ul>
-                  </div>
-              </div>
-          </div>
-
+  <!-- ---------------------------------------Header for Japanese Cuisine------------------------ -->
+  <div class="container-wrapper">
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="japaneseHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
           <div class="row">
-              <div class="col-md-8 col-sm-12">
-                  <h3 class="Ingredients"><i class="fa-solid fa-list-check"></i> Ingredients</h3>
-                  <ul id="ingredientLines"></ul>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <div>
-                  <h5 >Recipe From</h5>
-                  <p id="source"></p>
-                </div>
-                <div>
-                  <h5>Meal Type</h5>
-                  <p id="mealType"></p>
-                </div>
-             
-              </div>
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Japanese Recipes</h2> <br>
+            <p style="color: antiquewhite;">Explore the diverse world of Japanese cuisine beyond the familiar sushi and
+              teriyaki chicken with our
+              collection of
+              authentic recipes. Uncover step-by-step cooking guides that will help you recreate the finest ramen bowls,
+              crispy
+              tempura, succulent yakitori skewers, and indulge in the most exquisite Japanese desserts, all from the
+              comfort
+              of your
+              own home.</p>
           </div>
-          </div>
-
         </div>
-      </div>
+
+      </section>
     </div>
-    <!-- end Modal for recipe search detail---->
 
-
-    <!-- The Modal for cocktail search detail---->
-    <div class="modal" id="cocktailModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title" id="comodalTitle"></h4>
-            <button type="button" class="btn-close close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <!-- <div id="totalNutrients"></div> -->
-
-            <div class="row">
-              <div class="col-md-12 col-sm-12">
-                <div id="cocktailid"></div>
-
-                  <div class="item-feature">
-                      <ul>
-                          <li>
-                              <div class="feature-wrap">
-                                  <div class="media">
-                                      <div class="feature-icon">
-                                        <i class="fa-solid fa-whiskey-glass"></i>
-                                      </div>
-                                      <div class="media-body space-sm">
-                                          <div class="feature-title">Glass</div>
-                                          <div class="feature-sub-title" id="Glass"></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                              <div class="feature-wrap">
-                                  <div class="media">
-                                      <div class="feature-icon">
-                                        <i class="fa-solid fa-martini-glass-citrus"></i>
-                                      </div>
-                                      <div class="media-body space-sm">
-                                          <div class="feature-title" >Drink Type</div>
-                                          <div class="feature-sub-title" id="alcoholic"></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                                                    
-                      </ul>
-                  </div>
-              </div>
-              
-          </div>
-
+    <!-- ---------------------------------INDIAN HEADER------------------ -->
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="indianHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
           <div class="row">
-              <div class="col-md-7 col-sm-12">
-                  <h3>Instruction</h3>
-                  <div id="instructions"></div>
-              </div>
-              <div class="col-md-5 col-sm-12">
-                <h3 class="Ingredients"><i class="fa-solid fa-list-check"></i> Ingredients</h3>
-                <ul>
-                  <li id="ingredient1"></li>
-                  <li id="ingredient2"></li>
-                  <li id="ingredient3"></li>
-                  <li id="ingredient4"></li>
-                </ul>
-             
-              </div>
-          </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-     <!-- end Modal for cocktail search detail---->
-
-     
-           <!-- Modal Backdrop -->
-           <!-- <div id="modalBackdrop" class="modal-backdrop"></div> -->
-       
-
-</div>
-
-<!-- ----------- end conatiner for display recipe and cockatil data---------- -->
-
- <!-- ---------------------------------------Header for Japanese Cuisine------------------------ -->
- <div class="container-wrapper">
-  <div>
-    <section class="container-fluid row d-flex justify-content-center d-none" id="japaneseHeader">
-      <div class="col-6 d-flex justify-content-center align-items-center">
-        <div class="row">
-          <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Japanese Recipes</h2> <br>
-          <p style="color: antiquewhite;">Explore the diverse world of Japanese cuisine beyond the familiar sushi and
-            teriyaki chicken with our
-            collection of
-            authentic recipes. Uncover step-by-step cooking guides that will help you recreate the finest ramen bowls,
-            crispy
-            tempura, succulent yakitori skewers, and indulge in the most exquisite Japanese desserts, all from the
-            comfort
-            of your
-            own home.</p>
-        </div>
-      </div>
-
-    </section>
-  </div>
-
-  <!-- ---------------------------------INDIAN HEADER------------------ -->
-  <div>
-    <section class="container-fluid row d-flex justify-content-center d-none" id="indianHeader">
-      <div class="col-6 d-flex justify-content-center align-items-center">
-        <div class="row">
-          <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Indian Recipes</h2> <br>
-          p style="color: antiquewhite;">Embark on a culinary journey through the vibrant flavors of Indian cuisine,
-              venturing far beyond the conventional
-              curries and samosas. Immerse yourself in a treasure trove of authentic recipes that unveil the heart and
-              soul
-              of Indian
-              cooking. Discover meticulous cooking instructions that empower you to craft intricate biryanis, aromatic
-              masalas, tender
-              tandoori kebabs, and delve into the realm of decadent Indian sweets that will transport your taste buds to
-              a
-              world of
-              pure delight, all from your very own kitchen sanctuary.</p>
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Indian Recipes</h2> <br>
+            p style="color: antiquewhite;">Embark on a culinary journey through the vibrant flavors of Indian cuisine,
+            venturing far beyond the conventional
+            curries and samosas. Immerse yourself in a treasure trove of authentic recipes that unveil the heart and
+            soul
+            of Indian
+            cooking. Discover meticulous cooking instructions that empower you to craft intricate biryanis, aromatic
+            masalas, tender
+            tandoori kebabs, and delve into the realm of decadent Indian sweets that will transport your taste buds to
+            a
+            world of
+            pure delight, all from your very own kitchen sanctuary.</p>
           </div>
         </div>
       </section>
 
     </div>
-     <!-- -----------------------------TURKISH HEADER --------------------------- -->
-     <div>
+    <!-- -----------------------------TURKISH HEADER --------------------------- -->
+    <div>
       <section class="container-fluid row d-flex justify-content-center d-none" id="turkishHeader">
         <div class="col-6 d-flex justify-content-center align-items-center">
           <div class="row">
@@ -398,8 +216,8 @@
         </div>
       </section>
     </div>
-     <!-- --------------------------------Breakfast Header------------ -->
-     <div>
+    <!-- --------------------------------Breakfast Header------------ -->
+    <div>
       <section class="container-fluid row d-flex justify-content-center d-none" id="breakfastHeader">
         <div class="col-6 d-flex justify-content-center align-items-center">
           <div class="row">
@@ -419,8 +237,8 @@
       </section>
 
     </div>
-     <!-- ------------------------------------------Lunch Header---------------------- -->
-     <div>
+    <!-- ------------------------------------------Lunch Header---------------------- -->
+    <div>
       <section class="container-fluid row d-flex justify-content-center d-none" id="lunchHeader">
         <div class="col-6 d-flex justify-content-center align-items-center">
           <div class="row">
@@ -438,43 +256,505 @@
         </div>
       </section>
     </div>
-<!-- ------------------------------------Dinner Header------------- -->
-<div>
-  <section class="container-fluid row d-flex justify-content-center d-none" id="dinnerHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Dinner Recipes</h2> <br>
-        <p style="color: antiquewhite;">Elevate your evening with our exquisite dinner recipes that cater to every
-          palate. From succulent grilled salmon with
-          lemon-dill sauce to a hearty bowl of mushroom risotto, our dinner options are both impressive and easy to
-          prepare. If
-          you're seeking a vegetarian delight, the roasted vegetable and pesto pasta never disappoints. Create
-          memorable
-          dinner
-          experiences with our recipes that balance flavor, nutrition, and simplicity.</p>
-      </div>
+    <!-- ------------------------------------Dinner Header------------- -->
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="dinnerHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Dinner Recipes</h2> <br>
+            <p style="color: antiquewhite;">Elevate your evening with our exquisite dinner recipes that cater to every
+              palate. From succulent grilled salmon with
+              lemon-dill sauce to a hearty bowl of mushroom risotto, our dinner options are both impressive and easy to
+              prepare. If
+              you're seeking a vegetarian delight, the roasted vegetable and pesto pasta never disappoints. Create
+              memorable
+              dinner
+              experiences with our recipes that balance flavor, nutrition, and simplicity.</p>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
-</div>
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="dissertHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Disserts Recipes</h2> <br>
+
+            <p style="color: antiquewhite;">Satisfy your sweet tooth with our heavenly dessert recipes. Indulge in the
+              rich
+              decadence of a molten chocolate lava
+              cake, or enjoy the timeless charm of freshly baked chocolate chip cookies. For a lighter option, our mixed
+              berry parfait
+              layers luscious fruits with creamy yogurt. Whether you're celebrating or simply treating yourself, our
+              dessert
+              recipes
+              provide the perfect finale to any meal</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="cocktailsHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Stirring the Extraordinary</h2> <br>
+            <p style="color: antiquewhite;">Elevate your beverage game with our tantalizing cocktail recipes that
+              promise
+              to
+              excite your taste buds and elevate your
+              spirits. From timeless classics like the martini and margarita to innovative concoctions crafted by our
+              mixology
+              experts, our collection offers a diverse range of libations to suit every occasion. Unleash your inner
+              bartender as you
+              follow our easy-to-follow instructions, garnishing your creations with flair. Join us in the art of
+              cocktail
+              craftsmanship, where each sip is a journey of flavor and enjoyment. Cheers to making memories, clinking
+              glasses, and
+              celebrating life's moments with these liquid works of art.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- --------------about header----------- -->
+    <section class="container-fluid row d-flex justify-content-center d-none" id="aboutHeader">
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="row mt-4 text-center">
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">About Recipe Rescue</h5> <br>
+
+          <p style="color: antiquewhite;">Welcome to Recipe Rescue, where culinary inspiration meets delicious reality.
+            Our mission is to ignite your passion for
+            cooking and elevate your dining experience with a diverse array of recipes that span the globe. Whether
+            you're
+            a
+            seasoned home chef or just beginning your culinary journey, you'll find something to inspire, cook, and
+            enjoy
+            in our
+            carefully curated collection.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Explore and Discover</h5>
+          <p style="color: antiquewhite;">Embark on a gastronomic adventure as you explore our meticulously crafted
+            recipes that cater to every palate
+            and
+            occasion. From hearty breakfasts that kickstart your day to delightful desserts that satisfy your sweet
+            cravings, our
+            extensive range of meal options will leave you spoilt for choice.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Cuisine From Around the World
+          </h5>
+          <p style="color: antiquewhite;">Travel the world through your taste buds with our selection of international
+            cuisine. Indulge in the rich flavors of
+            Italian classics, explore the intricate spices of Indian dishes, savor the diverse offerings of Turkish
+            delicacies, and
+            immerse yourself in the art of Japanese culinary mastery. Our recipes bring the essence of each culture's
+            culinary
+            heritage straight to your kitchen.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Easy-to-Follow Instructions
+          </h5>
+          <p style="color: antiquewhite;">Cooking should be an enjoyable experience, and that's why we provide
+            step-by-step instructions that guide you through
+            the cooking process. Whether you're a novice or an experienced cook, our recipes are designed to be
+            accessible
+            and
+            rewarding, ensuring your success in the kitchen.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">From Kitchen to Table</h5>
+          <p style="color: antiquewhite;">The heart of any home is its kitchen, where meals are prepared and memories
+            are
+            made. Let Recipe Rescue be your culinary
+            companion, inspiring you to create memorable dishes that delight your loved ones and create cherished
+            moments
+            around the
+            table.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Join Our Community</h5>
+          <p style="color: antiquewhite;">Become a part of our vibrant culinary community, where food enthusiasts from
+            all
+            walks of life come together to share
+            their passion for cooking, exchange ideas, and inspire one another. Follow us on social media to stay
+            updated
+            on the
+            latest recipes, cooking tips, and food trends.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Get Cooking Today</h5>
+          <p style="color: antiquewhite;">Whether you're looking to impress guests with a gourmet dinner, whip up a
+            quick
+            and nourishing meal, or indulge in a
+            delectable dessert, Recipe Rescue has the recipes you need to bring your culinary dreams to life. Join us on
+            this
+            flavorful journey and unleash your inner chef.</p>
+        </div>
+
+      </div>
+    </section>
+    <!-- ---------------------PASTA HEADER---------- -->
+    <section class="container-fluid row d-flex justify-content-center d-none" id="pastaHeader">
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="row">
+          <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Pasta Recipes</h2> <br>
+          <p style="color: antiquewhite;">Explore a world of pasta perfection with our delectable pasta recipes. From
+            classic comfort dishes to innovative
+            creations, our collection offers a symphony of flavors and textures that will tantalize your taste buds.
+            Elevate your
+            cooking with step-by-step instructions for crafting mouthwatering sauces, combining the finest ingredients,
+            and
+            achieving the ideal al dente texture. Whether you're a fan of creamy carbonara, zesty marinara, or rich
+            pesto,
+            our pasta
+            recipes cater to every craving. Unleash your culinary creativity and embark on a pasta journey that promises
+            satiety and
+            satisfaction in every bite.</p>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------VEGAN HEADER------------ -->
+
+    <section class="container-fluid row d-flex justify-content-center d-none" id="veganHeader">
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="row">
+          <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Vegan recipes</h2> <br>
+          <p style="color: antiquewhite;">Discover the vibrant and diverse world of vegan recipes that redefine
+            plant-based dining, offering a multitude of
+            benefits for both you and the planet. Our collection celebrates the art of crafting delicious and nourishing
+            dishes
+            without compromising on flavor. By embracing vegan cuisine, you not only enjoy a healthier lifestyle with
+            reduced
+            saturated fats and cholesterol but also contribute to environmental sustainability by reducing your carbon
+            footprint.
+            From hearty mains to indulgent desserts, each recipe is a testament to the endless possibilities of
+            cruelty-free
+            cooking. Immerse yourself in the richness of natural ingredients, innovative substitutes, and imaginative
+            seasonings
+            that transform every meal into a culinary masterpiece. Elevate your taste buds and join us in the journey
+            towards a more
+            conscious and compassionate way of enjoying food.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------SOUP HEADER--------- -->
+    <section class="container-fluid row d-flex justify-content-center d-none" id="soupHeader">
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="row">
+          <h2 style=" font-weight: bold; color: rgba(205, 223, 218, 0.906)"> Soup recipes</h2> <br>
+          <p style="color: antiquewhite;">Delve into the comforting world of soups, where warmth and nourishment combine
+            in a single bowl. Our soup recipes offer
+            not only a delightful taste experience but also a range of benefits for your well-being. From soothing colds
+            to
+            providing a quick, balanced meal, soups are a versatile option. Packed with vitamins, minerals, and
+            hydration,
+            they
+            contribute to your overall health. Whether you're savoring a hearty vegetable stew or enjoying a light,
+            broth-based
+            concoction, each spoonful is a journey through layers of flavor and comfort. Join us in exploring a variety
+            of
+            soups
+            that cater to every palate and dietary need, and elevate your dining moments with bowls of liquid
+            nourishment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class=" container searchResult ">
+      <!-- ----------- display recipe and cockatil data---------- -->
+      <div class="container resultdisplay">
+        <div class="row mt-4" id="cocktails">
+
+        </div>
+
+        <div class="row mt-4" id="results">
+
+        </div>
+
+
+        <button id="prevButton" style="display: none;">Previous</button>
+        <button id="nextButton" style="display: none;">Next</button>
+
+        <!-- The Modal for recipe search detail---->
+        <div class="modal" id="recipeModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title" id="modalTitle"></h4>
+                <button type="button" class="btn-close close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <!-- <div id="totalNutrients"></div> -->
+
+                <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                    <div id="image"></div>
+
+                    <div class="item-feature">
+                      <ul>
+                        <li>
+                          <div class="feature-wrap">
+                            <div class="media">
+                              <div class="feature-icon">
+                                <i class="fa-regular fa-clock"></i>
+                              </div>
+                              <div class="media-body space-sm">
+                                <div class="feature-title">PREP TIME</div>
+                                <div class="feature-sub-title" id="totalTime"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="feature-wrap">
+                            <div class="media">
+                              <div class="feature-icon">
+                                <i class="fas fa-utensils"></i>
+                              </div>
+                              <div class="media-body space-sm">
+                                <div class="feature-title">Cuisine TYpe</div>
+                                <div class="feature-sub-title" id="cuisineType"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <div class="nutrition-wrap">
+                      <h3 class="item-title"><i class="fas fa-info"></i>Nutrition</h3>
+                      <ul class="nutrition-list" id="totalNutrients">
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-8 col-sm-12">
+                    <h3 class="Ingredients"><i class="fa-solid fa-list-check"></i> Ingredients</h3>
+                    <ul id="ingredientLines"></ul>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                    <div>
+                      <h5>Recipe From</h5>
+                      <p id="source"></p>
+                    </div>
+                    <div>
+                      <h5>Meal Type</h5>
+                      <p id="mealType"></p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- end Modal for recipe search detail---->
+
+
+        <!-- The Modal for cocktail search detail---->
+        <div class="modal" id="cocktailModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title" id="comodalTitle"></h4>
+                <button type="button" class="btn-close close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <!-- <div id="totalNutrients"></div> -->
+
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <div id="cocktailid"></div>
+
+                    <div class="item-feature">
+                      <ul>
+                        <li>
+                          <div class="feature-wrap">
+                            <div class="media">
+                              <div class="feature-icon">
+                                <i class="fa-solid fa-whiskey-glass"></i>
+                              </div>
+                              <div class="media-body space-sm">
+                                <div class="feature-title">Glass</div>
+                                <div class="feature-sub-title" id="Glass"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="feature-wrap">
+                            <div class="media">
+                              <div class="feature-icon">
+                                <i class="fa-solid fa-martini-glass-citrus"></i>
+                              </div>
+                              <div class="media-body space-sm">
+                                <div class="feature-title">Drink Type</div>
+                                <div class="feature-sub-title" id="alcoholic"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="col-md-7 col-sm-12">
+                    <h3>Instruction</h3>
+                    <div id="instructions"></div>
+                  </div>
+                  <div class="col-md-5 col-sm-12">
+                    <h3 class="Ingredients"><i class="fa-solid fa-list-check"></i> Ingredients</h3>
+                    <ul>
+                      <li id="ingredient1"></li>
+                      <li id="ingredient2"></li>
+                      <li id="ingredient3"></li>
+                      <li id="ingredient4"></li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- end Modal for cocktail search detail---->
+
+
+        <!-- Modal Backdrop -->
+        <div style="display: none" id="modalBackdrop" class="modal-backdrop"></div>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- --------------------Footer -->
+  <footer class="container-fluid footer " id="FooterSection">
+    <section class="row ">
+      <!-- d-flex justify-content-center -->
+
+
+      <div class="col-4  ">
+        <div class="row my-4 ">
+          <div class="col-12 d-flex justify-content-center ">
+
+
+            <img id="FooterImage" src="./assets/images/footerLogo.png" alt="footerLogo" ">
+      
+ </div>
+      </div>
+      <div class=" row my-4">
+            <div class="col-12 d-flex justify-content-center">
+              <a class="icons" href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a class="icons" href="#"> <i class="fa-brands fa-pinterest"></i></a>
+              <a class="icons" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a class="icons" href="#"><i class="fa-brands fa-pinterest"></i>
+              </a>
+              <a class="icons" href="#"> <i class="fa-brands fa-linkedin"></i></a>
+              <a class="icons" href="#"><i class="fa-brands fa-facebook"></i></a>
+
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="input-group mb-3" id="FooterSignUp">
+                <input type="text" class="form-control" placeholder="Email Address" id="SignUpFooter"
+                  aria-label="Email Address" aria-describedby="button-addon2">
+
+                <button class="btn btn-outline-secondary" type="button" id="signUpFooterButton">Sign Up</button><br>
+                <div class="row">
+                  <p style="font-size: 15px;" id="storedEmail"></p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <div class="row mt-5">
+            <div class="col-12">
+              <h6 style="font-weight: bold;">FOOD & RECIPES</h6>
+              <ul class="list-unstyled">
+                <a class="headerButton" data-value="pasta" data-target="pastaHeader" id="pastaButton" href="#">
+                  <li> Pasta Recipes</li>
+                </a>
+                <a class="headerButton" data-value="vegan" data-target="veganHeader" id="veganButton" href="#">
+                  <li> Vegan Recipes</li>
+                </a>
+                <a class="headerButton" data-value="soup" data-target="soupHeader" id="soupButton" href="#">
+                  <li>Soup Recipes</li>
+                </a>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <div class="row mt-5">
+            <div class="col-12">
+              <h6 style="font-weight: bold;">COMPANY</h6>
+              <ul class="list-unstyled">
+                <a class="" data-target="aboutHeader" href="#" id="about1">
+                  <li> About</li>
+                </a>
+                <a href="#">
+                  <li> Contact</li>
+                </a>
+                <a href="#">
+                  <li>Privacy policy</li>
+                </a>
+                <a href="#">
+                  <li>Cookie policy</li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+
+
+
+
+  </footer>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-crossorigin="anonymous"
-></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/secondScript.js"></script>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-

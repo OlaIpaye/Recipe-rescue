@@ -1,199 +1,414 @@
 body {
-    margin: 0;
-    padding: 0;
-  
-    min-height: 100vh;
-    background-color: #dbdde8;
-  }
+  margin: 0;
+  padding: 0;
 
-  #imagesHeader {
-    width: 100%;
-    height: auto;
-  }
+  min-height: 100vh;
+  background-color: #dbdde8;
+}
+
+#imagesHeader {
+  width: 100%;
+  height: auto;
+}
+
 /* ------------NAV BAR----------- */
 nav {
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-  }
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
 
-  #welcome {
-    font-weight: 500;
-    color: white;
-  }
+#welcome {
+  font-weight: 500;
+  color: white;
+}
 
-  /* -------------------Header------------- */
+/* -------------------Header------------- */
 #headerImg {
-    margin: 0;
-    padding: 0;
-    background-image: url(./images/food1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 500px;
-    display: flex;
-  
-    align-items: center;
-    text-align: center;
-  
-  }
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/food1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
+  display: flex;
 
-  #cocktailsButton {
-    padding: 13px 43px;
-    border-radius: 22px;
-    background-color: #d98e43;
-    color: #ffff;
-    transition: transform 0.3s;
-  }
-  
-  #cocktailsButton:hover {
-    transform: scale(1.1);
-  }
-  #inputSearch {
-    width: 40%;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
-  }
-  
-  #searchInputArea {
-    padding: 10px 10px 10px 10px;
-    border-radius: 30px;
-  }
-  
-  
-  #searchBarButton {
-    border-radius: 30px;
-    background-color: black;
-    transition: 0.3;
-  }
-  
-  #searchBarButton:hover {
-    transform: scale(1.1);
-  }
-    /* ------------------Japanese Header-------- */
+  align-items: center;
+  text-align: center;
+
+}
+
+#cocktailsButton {
+  padding: 13px 43px;
+  border-radius: 22px;
+  background-color: #d98e43;
+  color: #ffff;
+  transition: transform 0.3s;
+}
+
+#cocktailsButton:hover {
+  transform: scale(1.1);
+}
+
+#inputSearch {
+  width: 40%;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+#searchInputArea {
+  padding: 10px 10px 10px 10px;
+  border-radius: 30px;
+}
+
+
+#searchBarButton {
+  border-radius: 30px;
+  background-color: black;
+  transition: 0.3;
+}
+
+#searchBarButton:hover {
+  transform: scale(1.1);
+}
+
+/* ------------------Japanese Header-------- */
 #japaneseHeader {
-    margin: 0;
-    padding: 0;
-    background-image: url(./images/Japanese\ 1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  
-    min-height: 500px;
-  
-  }
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/Japanese\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-  #indianHeader {
-    margin: 0;
-    padding: 0;
-    background-image: url(./images/indian\ 1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  
-    min-height: 500px;
-  }
-  
-  #turkishHeader {
-    margin: 0;
-    padding: 0;
-    background-image: url(./images/turkish21.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center bottom;
-    min-height: 500px;
-  }
-  #italianHeader {
-    margin: 0;
-    padding: 0;
-    background-image: url(./images//italian\ 2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 500px;
-  }
-  #breakfastHeader {
-    margin: 0;
-    padding: 0;
-    background-image: url(./images/breakfast\ 3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 500px;
-  
-  }
-  #lunchHeader {
-    margin: 0;
-    padding: 0;
-    background-image: url(./images/lunch\ 1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 600px;
-  
-  }
-  #dinnerHeader {
-    margin: 0;
-    padding: 0;
-    background-image: url(./images/dinner1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 500px;
-  
-  }
+  min-height: 500px;
 
-  /* ------model css start-------- */
-  #recipeModal .modal-dialog {
-    max-width: 55em;
-    margin: 1.75rem auto;
 }
+
+#indianHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/indian\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-height: 500px;
+}
+
+#turkishHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/turkish21.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  min-height: 500px;
+}
+
+#italianHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images//italian\ 2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+}
+
+#breakfastHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/breakfast\ 3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+#lunchHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/lunch\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 600px;
+
+}
+
+#dinnerHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/dinner1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+/* ------------------------------new comm-------- */
+#dissertHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/dissert\ 2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+#cocktailsHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/cocktails1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+#aboutHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/about\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 1000px;
+
+}
+
+#pastaHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/pasta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+#veganHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/vegan\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+#soupHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/soup\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+
+/* -------------------nav and footer */
+.footer {
+  background-color: black;
+  color: white;
+  /* border-bottom: solid 2px white; */
+}
+
+#FooterImage {
+  width: 200px;
+  height: 70px;
+}
+
+
+/* cancel a default behaviour*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul.nav li.nav-item a {
+  color: rgba(215, 200, 191, 0.908);
+  font-weight: bold;
+  transition: color 0.3;
+}
+
+nav ul.nav li.nav-item a {
+  color: rgba(215, 200, 191, 0.908);
+  font-weight: bold;
+  transition: color 0.3;
+}
+
+nav ul.nav li.nav-item a:hover {
+  color: rgb(107, 214, 214);
+}
+
+footer .row .col-4 .row .col-12 a svg {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+#FooterSignUp {
+  width: 60%;
+  margin-left: 9%;
+}
+
+#signUpFooterButton {
+  border-radius: 30px;
+  background-color: black;
+  transition: 0.3;
+  color: white;
+  margin-left: 5px;
+}
+
+#signUpFooterButton:hover {
+  transform: scale(1.1);
+}
+
+#SignUpFooter {
+  border-radius: 50px;
+  background-color: grey;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translatey(-5px);
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.position-relative {
+  position: relative;
+}
+
+.save-icon {
+  position: absolute;
+  top: 10px;
+
+  right: 10px;
+
+  font-size: 20px;
+  color: red;
+  transition: transform 0.3s ease;
+}
+
+.save-icon:hover {
+  transform: scale(1.2);
+}
+
+footer .row .col-4 .row .col-12 .list-unstyled a li {
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+footer .row .col-4 .row .col-12 .list-unstyled a li:hover {
+  transform: scale(1.1);
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+footer {
+  padding-bottom: 3%;
+}
+
+.icons {
+  margin: 3px 7px 3px 7px;
+  font-size: 26px;
+
+}
+
+
+
+/* ------model css start-------- */
+#recipeModal .modal-dialog {
+  max-width: 55em;
+  margin: 1.75rem auto;
+}
+
 #cocktailModal .modal-body h3 {
-    font-size: 25px;
+  font-size: 25px;
 }
-  #results .card , #cocktails .card{
-    box-shadow: 0px 0px 13px 4px rgb(212 168 124 / 67%);
-    border: 1px solid #d98e43;
-  }
-  #nextButton, #prevButton{
-    background-color: #d98e43;
-    color: #fff;
-    border: 1px solid #d98e43;
-    border-radius: 5px;
-  }
-  #prevButton:disabled{
-    background-color: #baa187;
-  }
-  .modal-content img{
-    width: 100%;
+
+#results .card,
+#cocktails .card {
+  box-shadow: 0px 0px 13px 4px rgb(212 168 124 / 67%);
+  border: 1px solid #d98e43;
 }
-#recipeModal .modal-content, #cocktailModal .modal-content{
-    border: 2px solid #d98e43de;
-    box-shadow: 0px 0px 16px 5px rgb(212 168 124);
+
+#nextButton,
+#prevButton {
+  background-color: #d98e43;
+  color: #fff;
+  border: 1px solid #d98e43;
+  border-radius: 5px;
 }
+
+#prevButton:disabled {
+  background-color: #baa187;
+}
+
+.modal-content img {
+  width: 100%;
+}
+
+#recipeModal .modal-content,
+#cocktailModal .modal-content {
+  border: 2px solid #d98e43de;
+  box-shadow: 0px 0px 16px 5px rgb(212 168 124);
+}
+
 .item-title {
   font-weight: 700;
   font-size: 24px;
   color: #111111;
   margin-bottom: 30px;
 }
+
 .nutrition-wrap {
   background-color: #fef1f2;
   padding: 16px;
   margin-bottom: 30px;
 }
+
 .nutrition-wrap .item-title i {
   color: #d98e43;
   margin-right: 10px;
 }
+
 .Ingredients i {
   color: #d98e43;
   margin-right: 2px;
   font-size: 24px;
 }
+
 .nutrition-wrap .nutrition-list {
   border-radius: 4px;
   padding-top: 25px;
@@ -203,6 +418,7 @@ nav {
   -moz-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.13);
   box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.13);
 }
+
 .nutrition-wrap .nutrition-list li {
   padding-left: 35px;
   padding-right: 35px;
@@ -213,6 +429,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 .nutrition-wrap .nutrition-list li .nutrition-value {
   font-size: 20px;
   font-weight: 600;
@@ -222,13 +439,15 @@ nav {
 .item-feature {
   margin-bottom: 35px;
 }
+
 .item-feature ul {
-  margin:0;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
+
 .item-feature ul li {
   margin-top: 2px;
   max-width: 50%;
@@ -236,36 +455,48 @@ nav {
   padding-left: 1px;
   padding-right: 1px;
 }
+
 .item-feature ul li .feature-title {
   font-size: 18px;
   color: #111111;
   font-weight: 600;
 }
+
 .item-feature ul li .feature-wrap {
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
 }
+
 .item-feature ul li .media {
   height: 100%;
   padding: 12px 5px;
   align-items: center;
   display: flex;
 }
+
 .item-feature ul li .feature-icon {
   font-size: 24px;
   line-height: 1;
 }
+
 .media-body.space-sm {
   margin-left: 15px;
 }
 
 .modal-body h3 {
+
   font-size: 29px;
   padding-bottom: 13px;
   margin-bottom: 10px;
-  border-bottom: 1px dashed rgba(0,0,0,0.1);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+
 }
+
 #ingredientLines ul {
   list-style-type: disc;
+}
+
+.resultdisplay .modal-backdrop {
+  background: #0000008a !important;
 }
