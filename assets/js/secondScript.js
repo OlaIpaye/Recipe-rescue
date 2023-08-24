@@ -24,15 +24,33 @@ $(document).ready(function () {
     e.preventDefault();
     searchQuery = $("#searchInputArea").val();
   });
+
+  // -----------function generating random numbers
+  // var firstNumber;
+  // var secondNumber;
+  // function RandomNumbers() {
+  //   var diference = Math.floor(Math.random() * (8 - 6 + 1)) + 6;
+  //   firstNumber = Math.floor(Math.random() * (100 - diference + 1));
+  //   secondNumber = firstNumber + diference;
+  //   return [firstNumber, secondNumber];
+  // }
+  // RandomNumbers();
+
   //   -----------------Fetch data from API ------------
   async function fetchAPI(selectedValue) {
-    const baseURL = `https://api.edamam.com/search?q=${selectedValue}&app_id=${appId}&app_key=${apiKey}&from=0&to=6`;
+    const [firstNumber, secondNumber] = RandomNumbers();
+    const baseURL = `https://api.edamam.com/search?q=${selectedValue}&app_id=${appId}&app_key=${apiKey}&from=${firstNumber}&to=${secondNumber}`;
     const response = await fetch(baseURL);
     const data = await response.json();
     generateCards(data.hits);
-    console.log(data);
+    // console.log(data);
   }
-
+  function RandomNumbers() {
+    var diference = Math.floor(Math.random() * (8 - 6 + 1)) + 6;
+    firstNumber = Math.floor(Math.random() * (100 - diference + 1));
+    secondNumber = firstNumber + diference;
+    return [firstNumber, secondNumber];
+  }
   //   --------------Function for generating cards --------
   var searchResult = $(".searchResult"); // targets HTML area were cards will be displayed
   function generateCards(results) {
