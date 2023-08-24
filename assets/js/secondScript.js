@@ -39,20 +39,21 @@ $(document).ready(function () {
     searchResult.empty();
 
     let rowContainer;
-  }
 
-  results.forEach((result, i) => {
-    if (i % 3 === 0) {
-      // Starts a new row after every 3 cards
-      rowContainer = $("<div class='row'></div>");
-      searchResult.append(rowContainer); //append div to the  result area
-    }
-    //cards structure
-    const cardHTML = `
+    results.forEach((result, i) => {
+      if (i % 3 === 0) {
+        // Starts a new row after every 3 cards
+        rowContainer = $("<div class='row'></div>");
+        searchResult.append(rowContainer); //append container to the search result area
+      }
+      //cards structure
+      const cardHTML = `
       <div class="col-md-4 my-2">
         <div class="card card-hover" >
         <div class="position-relative">
-          <img src="${result.recipe.image}" class="card-img-top" alt="...">
+          <img src="${
+            result.recipe.image
+          }" class="card-img-top" alt="cardImage">
         <a href="#">  <span class="save-icon" data-index="${i}">&#10084;</span></a>
           </div>
           <div class="card-body">
@@ -63,8 +64,8 @@ $(document).ready(function () {
             <p class="card-text"> Meal type: ${
               result.recipe.mealType
             } </p>             <p class="card-text"> Calories ${result.recipe.calories.toFixed(
-      2
-    )}</p>
+        2
+      )}</p>
               <p class="card-text"> Cooking time: ${result.recipe.totalTime} min
               </p>
             <div class="row d-flex justify-content-end">
@@ -77,9 +78,9 @@ $(document).ready(function () {
       </div>
     `;
 
-    rowContainer.append(cardHTML); //append card to the container
-  });
-
+      rowContainer.append(cardHTML); //apend to the conainer
+    });
+  }
   //   --------------------------------End-----------
 });
 
@@ -115,7 +116,7 @@ signUpButton.click(function () {
     showSubscribtionMessage();
   }
 });
-
+// ----------function to inform user that we have his/her email in our data base after checking data from local storage
 function showSubscribtionMessage() {
   const Email1 = localStorage.getItem("userEmail");
   if (Email1) {
