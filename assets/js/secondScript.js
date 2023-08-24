@@ -28,4 +28,12 @@ $(document).ready(function () {
     generateCards(data.hits);
     console.log(data);
   }
+
+  //   --------------Function for generating cards --------
+  var searchResult = $(".searchResult"); // targets HTML area were cards will be displayed
+  function generateCards(results) {
+    searchResult.empty();
+
+    let rowContainer;
+  }
 });
