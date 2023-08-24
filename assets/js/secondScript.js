@@ -103,9 +103,15 @@ function getSavedRecipes() {
   return JSON.parse(localStorage.getItem("savedRecipes")) || [];
 }
 
-//event listener storing the data from sign up section 
+//event listener storing the data from sign up section
 signUpButton.click(function () {
   const email = emailInput.val();
 
-  
+  if ($.trim(email) !== "") {
+    localStorage.setItem("userEmail", email);
+
+    emailInput.val("");
+
+    showSubscribtionMessage();
+  }
 });
