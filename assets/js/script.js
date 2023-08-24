@@ -132,7 +132,23 @@ $(document).ready(function () {
                
             }
 
-         
+            nextButton.click(function () {
+                const searchQuery = $("#searchInput").val();
+                currentPage++;
+                if ($.trim(searchQuery) !== "") {
+                    fetchAndDisplayRecipes(searchQuery, currentPage);
+                }
+            });
+            
+            prevButton.click(function () {
+                if (currentPage > 1) {
+                    const searchQuery = $("#searchInput").val();
+                    currentPage--;
+                    if ($.trim(searchQuery) !== "") {
+                        fetchAndDisplayRecipes(searchQuery, currentPage);
+                    }
+                }
+            });
         },
              error: function (jqXHR, textStatus, errorThrown) {
                  console.error(jqXHR.status, textStatus, errorThrown);
