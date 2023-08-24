@@ -67,6 +67,76 @@ $(document).ready(function () {
          resultsDiv.append(recipeDiv);
      }
 
+     
+     function openModal(
+        title,image, source,cuisineType,totalTime,ingredientLines,totalNutrients, body) {
+        // Create an <img> element and set its src attribute to the image URL
+        const imageElement = $("<img>").addClass("modal-image").attr("src", image);
+        imageid.empty(); // Clear any existing content
+        imageid.append(imageElement);
+
+      
+        modalTitle.text(title);
+        sourceid.text(source);
+        cuisineT.text(cuisineType);
+        totalT.text(totalTime + " mins")
+
+        // Clear any existing content in ingredientL and totalNuts
+    ingredientL.empty();
+    totalNuts.empty();
+
+    // Create an unordered list for ingredients
+    const ingredientList = $("<ul>");
+
+    // Loop through ingredientLines and create list items
+    ingredientLines.forEach((ingredient) => {
+        const listItem = $("<li>").text(ingredient);
+        ingredientList.append(listItem);
+    });
+
+     // Append the ingredientList to the ingredientLines div
+     $("#ingredientLines").empty().append(ingredientList);
+
+
+
+    const caNutrient = totalNutrients.CA; // Access the "CA" nutrient object
+    const carbNutrient = totalNutrients.CHOCDF;
+    const fatNutrient = totalNutrients.FAT;
+    const sugarNutrient = totalNutrients.SUGAR;
+    const proteinNutrient = totalNutrients.PROCNT;
+    const ironNutrient = totalNutrients.FE;
+
+    // Define an array of nutrient objects
+    const nutrients = [
+        caNutrient,
+        carbNutrient,
+        fatNutrient,
+        sugarNutrient,
+        proteinNutrient,
+        ironNutrient
+    ];
+
+        nutrients.forEach(nutrient => {
+        const nutrientLabelText = nutrient.label;
+        const nutrientQuantity = parseFloat(nutrient.quantity);
+        const nutrientQuantityText = nutrientQuantity.toFixed(2) + " " + nutrient.unit;
+
+        const nutrientName = $("<div>").addClass("nutrition-name").text(nutrientLabelText);
+        const nutrientValue = $("<div>").addClass("nutrition-value").text(nutrientQuantityText);
+
+        const listItem = $("<li>");
+        listItem.append(nutrientName, nutrientValue);
+
+        // Append the list item to the existing ul element with the ID "totalNutrients"
+        $("#totalNutrients").append(listItem);
+    });
+ 
+        modalBody.html(body);
+        recipeModal.css("display", "block");
+        modalBackdrop.css("display", "block");
+    }
+
+
 
 
      function displayCocktail(cocktail) {
