@@ -100,4 +100,44 @@ $(document).ready(function () {
         cocktailsDiv.append(cocktailDiv);
     }
 
+
+    function fetchAndDisplayRecipes(searchQuery, page) {
+        const appId = "cc6b699e";
+         const appKey = "1eaf8f14d98462c07aa870b1e3e0ffa2";
+         const apiUrl = `https://api.edamam.com/search?q=${encodeURIComponent(searchQuery)}&app_id=${appId}&app_key=${appKey}&from=${(page - 1) * limit}&to=${page * limit}`;
+         $.ajax({   
+         url: apiUrl,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            console.log(data);
+
+            
+        
+             if (data.hits.length === 0) {
+                resultsDiv.empty();
+                resultsDiv.text("Sorry, we didn't find any recipes!")
+                .css({
+                    "color": "#d98e43",       
+                    "font-weight": "bold",
+                    "font-size": "2em" 
+                });
+               
+            } else {
+                resultsDiv.empty();
+                data.hits.forEach((hit) => {
+                    const recipe = hit.recipe;
+                    displayRecipe(recipe);
+                });
+               
+            }
+
+         
+        },
+             error: function (jqXHR, textStatus, errorThrown) {
+                 console.error(jqXHR.status, textStatus, errorThrown);
+             },
+         });
+     }
+
 });
