@@ -1,6 +1,6 @@
 # Recipe Rescue - Where culinary inspiration meets delicious reality
 
-![Recipe Rescue website design](<assets/images/recipes rescue website design.png>)
+![Recipe Rescue website design](<./assets/images/ReadmeImages/Screenshot 2023-08-24 165126.png>)
 
 ## About this Project
 
@@ -26,17 +26,17 @@ How our Recipe Rescue application came together:
 
 - Header design by Vasile
 
-![recipe rescue website design](<assets/images/recipes rescue header design idea.gif>)
+![recipe rescue website design](./assets/images/ReadmeImages/recipes%20rescue%20header%20design%20idea.gif)
 
 - Inital website design in Figma by Farah and Salma
 
 - Adding team collaboration in Github by Ola
 
-  ![team collaboration in github](<assets/images/team collaboration in github.png>)
+  ![team collaboration in github](<./assets/images/ReadmeImages/team collaboration in github.png>)
 
 * Generating API code by Rinkal
 
-  ![recipe API pop up modal](<assets/images/recipe API modal pop up.png>)
+  ![recipe API pop up modal](<./assets/images/ReadmeImages/recipe API modal pop up.png>)
 
 ## Features and Functionality of Recipe Rescue
 
@@ -44,7 +44,7 @@ Our application is a recipe inspiration website and we wanted to offer users the
 
 - Recipe Search Bar in middle of the homepage taking center stage:
 
-  ![recipe rescue search bar](<assets/images/recipe rescue search bar.png>)
+  ![recipe rescue search bar](<./assets/images/ReadmeImages/recipe rescue search bar.png>)
 
 * Recipe cards displays after user searches for a recipe:
 
