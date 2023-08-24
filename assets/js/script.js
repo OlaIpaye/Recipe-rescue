@@ -325,4 +325,55 @@ $(document).ready(function () {
         }
     });
 
+    
+     // Random search queries for initial random recipes
+     const initialSearchQueries = [
+        "chicken",
+        "pasta",
+        "vegetarian",
+        "dessert",
+        "soup",
+        "breakfast"
+    ];
+
+    // Pick a random query from the list
+    const randomIndex = Math.floor(Math.random() * initialSearchQueries.length);
+    const initialSearchQuery = initialSearchQueries[randomIndex];
+    
+
+    fetchAndDisplayRecipes(initialSearchQuery, currentPage);
+
+// Fetch a random recipe image and display it
+function displayRandomRecipeImage() {
+    const appId = "cc6b699e";
+    const appKey = "1eaf8f14d98462c07aa870b1e3e0ffa2";
+    const randomRecipeApiUrl = `https://api.edamam.com/search?q=${encodeURIComponent(
+        initialSearchQuery
+    )}&app_id=${appId}&app_key=${appKey}&to=6`;
+
+    $.ajax({
+        url: randomRecipeApiUrl,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            if (data.hits.length > 0) {
+                const randomRecipe = data.hits[0].recipe;
+                // Update the entire recipe card with the new random recipe
+                displayRecipe(randomRecipe);
+            }
+            
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.error(jqXHR.status, textStatus, errorThrown);
+        },
+    });
+}
+
+    // Call the function to display a random recipe image
+    displayRandomRecipeImage();
+     // Initial search
+    //  const initialSearchQuery = "initial";
+    //  fetchAndDisplayRecipes(initialSearchQuery, currentPage);
+      
+
 });
