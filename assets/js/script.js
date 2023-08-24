@@ -101,7 +101,7 @@ $(document).ready(function () {
     }
 
 
-     function fetchAndDisplayRecipes(searchQuery, page) {
+    function fetchAndDisplayRecipes(searchQuery, page) {
         const appId = "cc6b699e";
          const appKey = "1eaf8f14d98462c07aa870b1e3e0ffa2";
          const apiUrl = `https://api.edamam.com/search?q=${encodeURIComponent(searchQuery)}&app_id=${appId}&app_key=${appKey}&from=${(page - 1) * limit}&to=${page * limit}`;
@@ -164,5 +164,19 @@ $(document).ready(function () {
              },
          });
      }
+
+     $("#searchButton").click(function () {
+        const searchQuery = $("#searchInput").val();
+
+        if ($.trim(searchQuery) !== "") {
+            resultsDiv.empty();
+            currentPage = 1;
+            fetchAndDisplayRecipes(searchQuery, currentPage);
+            cocktailsDiv.empty();
+            fetchAndDisplayCocktails(searchQuery);
+            $("#nextButton").show();
+            $("#prevButton").show();
+        }
+    });
 
 });
