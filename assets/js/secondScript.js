@@ -102,3 +102,10 @@ $(".save-icon").on("click", function () {
 function getSavedRecipes() {
   return JSON.parse(localStorage.getItem("savedRecipes")) || [];
 }
+
+//event listener storing the data from sign up section 
+signUpButton.click(function () {
+  const email = emailInput.val();
+
+  
+});
