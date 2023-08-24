@@ -115,3 +115,7 @@ signUpButton.click(function () {
     showSubscribtionMessage();
   }
 });
+
+function showSubscribtionMessage() {
+  const Email1 = localStorage.getItem("userEmail");
+}
