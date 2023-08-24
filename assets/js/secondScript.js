@@ -81,5 +81,6 @@ $(document).ready(function () {
 
 $(".save-icon").on("click", function () {
   const dataIndex = $(this).data("index");
-  const selectedRecipe = results[dataIndex].recipe;
+  const selectedRecipe = results[dataIndex].recipe; //grabs recipe detail by data-index created in regenerated cards
+  const savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
 });
