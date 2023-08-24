@@ -84,7 +84,7 @@ $(".save-icon").on("click", function () {
   const selectedRecipe = results[dataIndex].recipe; //grabs recipe detail by data-index created in regenerated cards
   const savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
 
-  //if statement to save recipe is condition are meet and push it to the array 
+  //if statement to save recipe is condition are meet and push it to the array
   if (!savedRecipes.some((recipe) => recipe.label === selectedRecipe.label)) {
     savedRecipes.push(selectedRecipe);
     localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
@@ -93,3 +93,8 @@ $(".save-icon").on("click", function () {
     alert("Recipe already saved!");
   }
 });
+
+//gets the data recipe from local storage and parse it back from string in array
+function getSavedRecipes() {
+  return JSON.parse(localStorage.getItem("savedRecipes")) || [];
+}
