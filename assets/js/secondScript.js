@@ -36,4 +36,15 @@ $(document).ready(function () {
 
     let rowContainer;
   }
+
+  results.forEach((result, i) => {
+    if (i % 3 === 0) {
+      // Starts a new row after every 3 cards
+      rowContainer = $("<div class='row'></div>");
+      searchResult.append(rowContainer);
+    }
+    //cards structure
+  });
+
+  //   --------------------------------End-----------
 });
