@@ -169,7 +169,7 @@ nav {
 #cocktailsHeader {
   margin: 0;
   padding: 0;
-  background-image: url(../images/cocktails.jpg);
+  background-image: url(../images/cocktails1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -485,12 +485,18 @@ footer {
 }
 
 .modal-body h3 {
+
   font-size: 29px;
   padding-bottom: 13px;
   margin-bottom: 10px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+
 }
 
 #ingredientLines ul {
   list-style-type: disc;
+}
+
+.resultdisplay .modal-backdrop {
+  background: #0000008a !important;
 }
