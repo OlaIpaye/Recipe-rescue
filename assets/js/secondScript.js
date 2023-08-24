@@ -118,4 +118,11 @@ signUpButton.click(function () {
 
 function showSubscribtionMessage() {
   const Email1 = localStorage.getItem("userEmail");
+  if (Email1) {
+    storedEmail.text("Thank you for your subscription: " + Email1);
+  }
+
+  setTimeout(function () {
+    storedEmail.text("");
+  }, 1000);
 }
