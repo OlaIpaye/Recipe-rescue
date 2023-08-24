@@ -26,5 +26,45 @@ $(document).ready(function () {
     const modalBackdrop = $("#modalBackdrop"); 
     const nextButton = $("#nextButton");
     const prevButton = $("#prevButton");
+
     
+    let currentPage = 1;
+    const limit = 6;
+
+    function displayRecipe(recipe) {
+        const card = $("<div>").addClass("card");
+        // if ($("#searchInput").val().trim() !== "") {
+        //     const image = $("<img>").addClass("card-img-top").attr("src", recipe.image);
+        //     card.append(image);
+        // }
+        // Create an <img> element and set its src attribute to the recipe image URL
+        const image = $("<img>").addClass("card-img-top").attr("src", recipe.image);
+        card.append(image);
+
+         const recipeDiv = $("<div>").addClass("col-md-4 mb-4");
+        
+         const cardBody = $("<div>").addClass("card-body");
+         
+         const label = $("<h5>")
+             .addClass("card-title")
+             .text(recipe.label)
+             .css("cursor", "pointer"); 
+             label.click(function () {
+             openModal(
+                recipe.label,
+                 recipe.image,
+                  recipe.source,
+                  recipe.cuisineType,
+                  recipe.totalTime,
+                  recipe.ingredientLines,
+                  recipe.totalNutrients,
+                  recipe.totalNutrients.fat);
+         });
+
+         cardBody.append(label);
+         card.append(cardBody);
+         recipeDiv.append(card);
+         resultsDiv.append(recipeDiv);
+     }
+
 });
