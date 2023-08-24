@@ -15,4 +15,17 @@ $(document).ready(function () {
     // searchQuery = $(this).data("value");
     fetchAPI(selectedValue);
   });
+  // targets the search input area and click event on search code
+  searchButton.on("click", (e) => {
+    e.preventDefault();
+    searchQuery = $("#searchInputArea").val();
+  });
+  //   -----------------Fetch data from API ------------
+  async function fetchAPI(selectedValue) {
+    const baseURL = `https://api.edamam.com/search?q=${selectedValue}&app_id=${appId}&app_key=${apiKey}&from=0&to=6`;
+    const response = await fetch(baseURL);
+    const data = await response.json();
+    generateCards(data.hits);
+    console.log(data);
+  }
 });
