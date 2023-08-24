@@ -67,4 +67,37 @@ $(document).ready(function () {
          resultsDiv.append(recipeDiv);
      }
 
+
+
+     function displayCocktail(cocktail) {
+        const cocktailDiv = $("<div>").addClass("col-md-4 mb-4");
+        const card = $("<div>").addClass("card");
+        const cardBody = $("<div>").addClass("card-body");
+        const title = $("<h5>")
+            .addClass("card-title")
+            .text(cocktail.strDrink)
+            .css("cursor", "pointer"); 
+        title.click(function () {
+           openCocktailModal(
+               cocktail.strDrink,
+           cocktail.strInstructions,
+           cocktail.strIngredient1,
+           cocktail.strIngredient2,
+           cocktail.strIngredient3,
+           cocktail.strIngredient4,
+           cocktail.strAlcoholic,
+           cocktail.strGlass,
+           cocktail.strDrinkThumb
+           );
+        });
+
+        const image = $("<img>").addClass("card-img-top").attr("src", cocktail.strDrinkThumb);
+
+        cardBody.append(title);
+        card.append(image);
+        card.append(cardBody);
+        cocktailDiv.append(card);
+        cocktailsDiv.append(cocktailDiv);
+    }
+
 });
