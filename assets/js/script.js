@@ -165,6 +165,46 @@ $(document).ready(function () {
          });
      }
 
+
+     function fetchAndDisplayCocktails(searchQuery) {
+        const apiKey = "6fc6862a34msh0a6b9d463a6e54ep1fcdb9jsn6c012689b6b1";
+        const apiUrl = "https://the-cocktail-db.p.rapidapi.com/search.php";
+
+        $.ajax({
+            url: apiUrl,
+            headers: {
+                "X-RapidAPI-Host": "the-cocktail-db.p.rapidapi.com",
+                "X-RapidAPI-Key": apiKey,
+            },
+            data: {
+                s: searchQuery,
+            },
+            method: "GET",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+
+              if (!data.drinks || data.drinks.length === 0) {
+                cocktailsDiv.empty();
+                cocktailsDiv.text("Sorry, we didn't find any cocktail!")
+                .css({
+                   "color": "#d98e43",       
+                   "font-weight": "bold",
+                   "font-size": "2em" 
+               });
+            } else {
+                cocktailsDiv.empty();
+                data.drinks.forEach((cocktail) => {
+                    displayCocktail(cocktail);
+                });
+            }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.error(jqXHR.status, textStatus, errorThrown);
+            },
+        });
+    }
+
      $("#searchButton").click(function () {
         const searchQuery = $("#searchInput").val();
 
