@@ -26,7 +26,7 @@ nav {
 #headerImg {
   margin: 0;
   padding: 0;
-  background-image: url(./images/food1.jpg);
+  background-image: url(../images/food1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -75,7 +75,7 @@ nav {
 #japaneseHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/Japanese\ 1.jpg);
+  background-image: url(../images/Japanese\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -87,7 +87,7 @@ nav {
 #indianHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/indian\ 1.jpg);
+  background-image: url(../images/indian\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -98,7 +98,7 @@ nav {
 #turkishHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/turkish21.jpg);
+  background-image: url(../images/turkish21.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -109,7 +109,7 @@ nav {
 #italianHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images//italian\ 2.jpg);
+  background-image: url(../images//italian\ 2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -120,7 +120,7 @@ nav {
 #breakfastHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/breakfast\ 3.jpg);
+  background-image: url(../images/breakfast\ 3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -132,7 +132,7 @@ nav {
 #lunchHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/lunch\ 1.jpg);
+  background-image: url(../images/lunch\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -144,7 +144,7 @@ nav {
 #dinnerHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/dinner1.jpg);
+  background-image: url(../images/dinner1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -157,7 +157,7 @@ nav {
 #dissertHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/dissert\ 2.jpg);
+  background-image: url(../images/dissert\ 2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -169,7 +169,7 @@ nav {
 #cocktailsHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/cocktails.jpg);
+  background-image: url(../images/cocktails.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -181,7 +181,7 @@ nav {
 #aboutHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/about\ 1.jpg);
+  background-image: url(../images/about\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -193,7 +193,7 @@ nav {
 #pastaHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/pasta.jpg);
+  background-image: url(../images/pasta.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -205,7 +205,7 @@ nav {
 #veganHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/vegan\ 1.jpg);
+  background-image: url(../images/vegan\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -217,7 +217,7 @@ nav {
 #soupHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/soup\ 1.jpg);
+  background-image: url(../images/soup\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
