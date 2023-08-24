@@ -101,7 +101,7 @@ $(document).ready(function () {
     }
 
 
-    function fetchAndDisplayRecipes(searchQuery, page) {
+     function fetchAndDisplayRecipes(searchQuery, page) {
         const appId = "cc6b699e";
          const appKey = "1eaf8f14d98462c07aa870b1e3e0ffa2";
          const apiUrl = `https://api.edamam.com/search?q=${encodeURIComponent(searchQuery)}&app_id=${appId}&app_key=${appKey}&from=${(page - 1) * limit}&to=${page * limit}`;
@@ -112,9 +112,18 @@ $(document).ready(function () {
         success: function (data) {
             console.log(data);
 
-            
+            if (page === 1) {
+                prevButton.prop("disabled", true);
+            } else {
+                prevButton.prop("disabled", false);
+            }
         
-             if (data.hits.length === 0) {
+            if (data.hits.length < limit) {
+                nextButton.prop("disabled", true);
+            } else {
+                nextButton.prop("disabled", false);
+            }
+            if (data.hits.length === 0) {
                 resultsDiv.empty();
                 resultsDiv.text("Sorry, we didn't find any recipes!")
                 .css({
