@@ -41,7 +41,7 @@ $(document).ready(function () {
     if (i % 3 === 0) {
       // Starts a new row after every 3 cards
       rowContainer = $("<div class='row'></div>");
-      searchResult.append(rowContainer);
+      searchResult.append(rowContainer); //append div to the  result area
     }
     //cards structure
     const cardHTML = `
@@ -72,6 +72,8 @@ $(document).ready(function () {
         </div>
       </div>
     `;
+
+    rowContainer.append(cardHTML); //append card to the container
   });
 
   //   --------------------------------End-----------
