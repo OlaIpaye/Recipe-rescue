@@ -47,7 +47,14 @@ $(document).ready(function () {
     const cardHTML = `<div class="col-md-4 my-2">
      <div class="card card-hover" >
        <div class="position-relative">
+       <img src="${result.recipe.image}" class="card-img-top" alt="...">
+        <a href="#">  <span class="save-icon" data-index="${i}">&#10084;</span></a>
      </div>
+     <div class="card-body">
+     <h5 class="card-title">${result.recipe.label}</h5>
+     <p class="card-text"> Cuisine type: ${result.recipe.cuisineType} </p>
+     <p class="card-text"> Meal type: ${result.recipe.mealType} </p> 
+     <p class="card-text"> Calories ${result.recipe.calories.toFixed(2)}</p>
      </div>
     </div>`;
   });
