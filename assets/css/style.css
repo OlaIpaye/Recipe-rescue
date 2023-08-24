@@ -134,3 +134,14 @@ nav {
     min-height: 600px;
   
   }
+  #dinnerHeader {
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/dinner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 500px;
+  
+  }
