@@ -44,6 +44,12 @@ $(document).ready(function () {
       searchResult.append(rowContainer);
     }
     //cards structure
+    const cardHTML = `<div class="col-md-4 my-2">
+     <div class="card card-hover" >
+       <div class="position-relative">
+     </div>
+     </div>
+    </div>`;
   });
 
   //   --------------------------------End-----------
