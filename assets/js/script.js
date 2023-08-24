@@ -170,6 +170,37 @@ $(document).ready(function () {
         cocktailsDiv.append(cocktailDiv);
     }
 
+    function openCocktailModal(title, instructions, ingredient1, ingredient2, ingredient3, ingredient4, alcoholic, glass, image) {
+       
+    
+        comodalTitle.text(title);
+        instruct.text(instructions);
+        ingr1.text(ingredient1);
+        ingr2.text(ingredient2);
+        ingr3.text(ingredient3);
+        ingr4.text(ingredient4);
+        alco.text(alcoholic);
+        gla.text(glass);
+        
+    
+        // Clear any existing content in modalBody
+        modalBody.empty();
+    
+        // Create an <img> element and set its src attribute to the image URL
+        const imageElement = $("<img>").addClass("modal-image").attr("src", image);
+        //modalBody.append(imageElement);
+   
+        cocktailid.empty(); // Clear any existing content
+        cocktailid.append(imageElement);
+        
+    
+  
+    
+        // Display the modal
+        cocktailModal.css("display", "block");
+        modalBackdrop.css("display", "block");
+    }
+
 
     function fetchAndDisplayRecipes(searchQuery, page) {
         const appId = "cc6b699e";
