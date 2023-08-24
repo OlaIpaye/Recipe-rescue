@@ -201,6 +201,11 @@ $(document).ready(function () {
         modalBackdrop.css("display", "block");
     }
 
+    $(".close").click(function () {
+        cocktailModal.css("display", "none");
+         recipeModal.css("display", "none");
+         modalBackdrop.css("display", "none"); 
+     });
 
     function fetchAndDisplayRecipes(searchQuery, page) {
         const appId = "cc6b699e";
