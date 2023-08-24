@@ -1,3 +1,7 @@
+const signUpButton = $("#signUpFooterButton");
+const emailInput = $("#SignUpFooter");
+const storedEmail = $("#storedEmail");
+
 $(document).ready(function () {
   // ----------Declared Variables--------
   const searchButton = $("#searchBarButton");
