@@ -9,6 +9,8 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -117,6 +119,192 @@
     </div>
   </div>
 </div>
+
+<!-- ----------- display recipe and cockatil data---------- -->
+<div class="container">
+  <div class="row mt-4" id="cocktails">
+        
+  </div>
+
+  <div class="row mt-4" id="results">
+
+  </div>
+ 
+  
+  <button id="prevButton" style="display: none;">Previous</button>
+  <button id="nextButton" style="display: none;">Next</button>
+
+    <!-- The Modal for recipe search detail---->
+    <div class="modal" id="recipeModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" id="modalTitle"></h4>
+            <button type="button" class="btn-close close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <!-- <div id="totalNutrients"></div> -->
+
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div id="image"></div>
+
+                  <div class="item-feature">
+                      <ul>
+                          <li>
+                              <div class="feature-wrap">
+                                  <div class="media">
+                                      <div class="feature-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                      </div>
+                                      <div class="media-body space-sm">
+                                          <div class="feature-title">PREP TIME</div>
+                                          <div class="feature-sub-title" id="totalTime"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="feature-wrap">
+                                  <div class="media">
+                                      <div class="feature-icon">
+                                        <i class="fas fa-utensils"></i>
+                                      </div>
+                                      <div class="media-body space-sm">
+                                          <div class="feature-title" >Cuisine TYpe</div>
+                                          <div class="feature-sub-title" id="cuisineType"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                                                    
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                  <div class="nutrition-wrap">
+                      <h3 class="item-title"><i class="fas fa-info"></i>Nutrition</h3>
+                      <ul class="nutrition-list" id="totalNutrients">
+                          
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-8 col-sm-12">
+                  <h3 class="Ingredients"><i class="fa-solid fa-list-check"></i> Ingredients</h3>
+                  <ul id="ingredientLines"></ul>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div>
+                  <h5 >Recipe From</h5>
+                  <p id="source"></p>
+                </div>
+                <div>
+                  <h5>Meal Type</h5>
+                  <p id="mealType"></p>
+                </div>
+             
+              </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- end Modal for recipe search detail---->
+
+
+    <!-- The Modal for cocktail search detail---->
+    <div class="modal" id="cocktailModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" id="comodalTitle"></h4>
+            <button type="button" class="btn-close close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <!-- <div id="totalNutrients"></div> -->
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <div id="cocktailid"></div>
+
+                  <div class="item-feature">
+                      <ul>
+                          <li>
+                              <div class="feature-wrap">
+                                  <div class="media">
+                                      <div class="feature-icon">
+                                        <i class="fa-solid fa-whiskey-glass"></i>
+                                      </div>
+                                      <div class="media-body space-sm">
+                                          <div class="feature-title">Glass</div>
+                                          <div class="feature-sub-title" id="Glass"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="feature-wrap">
+                                  <div class="media">
+                                      <div class="feature-icon">
+                                        <i class="fa-solid fa-martini-glass-citrus"></i>
+                                      </div>
+                                      <div class="media-body space-sm">
+                                          <div class="feature-title" >Drink Type</div>
+                                          <div class="feature-sub-title" id="alcoholic"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                                                    
+                      </ul>
+                  </div>
+              </div>
+              
+          </div>
+
+          <div class="row">
+              <div class="col-md-7 col-sm-12">
+                  <h3>Instruction</h3>
+                  <div id="instructions"></div>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <h3 class="Ingredients"><i class="fa-solid fa-list-check"></i> Ingredients</h3>
+                <ul>
+                  <li id="ingredient1"></li>
+                  <li id="ingredient2"></li>
+                  <li id="ingredient3"></li>
+                  <li id="ingredient4"></li>
+                </ul>
+             
+              </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+     <!-- end Modal for cocktail search detail---->
+
+     
+           <!-- Modal Backdrop -->
+           <div id="modalBackdrop" class="modal-backdrop"></div>
+          </div>
+
+</div>
+
+<!-- ----------- end conatiner for display recipe and cockatil data---------- -->
 
  <!-- ---------------------------------------Header for Japanese Cuisine------------------------ -->
  <div class="container-wrapper">
@@ -272,6 +460,12 @@
     </div>
   </section>
 </div>
+
+</body>
+
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/secondScript.js"></script>
+</html>
 
 
 

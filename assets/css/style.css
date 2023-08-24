@@ -145,3 +145,127 @@ nav {
     min-height: 500px;
   
   }
+
+  /* ------model css start-------- */
+  #recipeModal .modal-dialog {
+    max-width: 55em;
+    margin: 1.75rem auto;
+}
+#cocktailModal .modal-body h3 {
+    font-size: 25px;
+}
+  #results .card , #cocktails .card{
+    box-shadow: 0px 0px 13px 4px rgb(212 168 124 / 67%);
+    border: 1px solid #d98e43;
+  }
+  #nextButton, #prevButton{
+    background-color: #d98e43;
+    color: #fff;
+    border: 1px solid #d98e43;
+    border-radius: 5px;
+  }
+  #prevButton:disabled{
+    background-color: #baa187;
+  }
+  .modal-content img{
+    width: 100%;
+}
+#recipeModal .modal-content, #cocktailModal .modal-content{
+    border: 2px solid #d98e43de;
+    box-shadow: 0px 0px 16px 5px rgb(212 168 124);
+}
+.item-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #111111;
+  margin-bottom: 30px;
+}
+.nutrition-wrap {
+  background-color: #fef1f2;
+  padding: 16px;
+  margin-bottom: 30px;
+}
+.nutrition-wrap .item-title i {
+  color: #d98e43;
+  margin-right: 10px;
+}
+.Ingredients i {
+  color: #d98e43;
+  margin-right: 2px;
+  font-size: 24px;
+}
+.nutrition-wrap .nutrition-list {
+  border-radius: 4px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.13);
+}
+.nutrition-wrap .nutrition-list li {
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #d7d7d7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nutrition-wrap .nutrition-list li .nutrition-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #444444;
+}
+
+.item-feature {
+  margin-bottom: 35px;
+}
+.item-feature ul {
+  margin:0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.item-feature ul li {
+  margin-top: 2px;
+  max-width: 50%;
+  flex: 0 0 50%;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.item-feature ul li .feature-title {
+  font-size: 18px;
+  color: #111111;
+  font-weight: 600;
+}
+.item-feature ul li .feature-wrap {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+}
+.item-feature ul li .media {
+  height: 100%;
+  padding: 12px 5px;
+  align-items: center;
+  display: flex;
+}
+.item-feature ul li .feature-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+.media-body.space-sm {
+  margin-left: 15px;
+}
+
+.modal-body h3 {
+  font-size: 29px;
+  padding-bottom: 13px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+#ingredientLines ul {
+  list-style-type: disc;
+}
