@@ -208,8 +208,8 @@ $(document).ready(function () {
      });
 
     function fetchAndDisplayRecipes(searchQuery, page) {
-        const appId = "cc6b699e";
-         const appKey = "1eaf8f14d98462c07aa870b1e3e0ffa2";
+        const appId = "";
+         const appKey = "";
          const apiUrl = `https://api.edamam.com/search?q=${encodeURIComponent(searchQuery)}&app_id=${appId}&app_key=${appKey}&from=${(page - 1) * limit}&to=${page * limit}`;
          $.ajax({   
          url: apiUrl,
@@ -345,8 +345,8 @@ $(document).ready(function () {
 
 // Fetch a random recipe image and display it
 function displayRandomRecipeImage() {
-    const appId = "cc6b699e";
-    const appKey = "1eaf8f14d98462c07aa870b1e3e0ffa2";
+    const appId = "";
+    const appKey = "";
     const randomRecipeApiUrl = `https://api.edamam.com/search?q=${encodeURIComponent(
         initialSearchQuery
     )}&app_id=${appId}&app_key=${appKey}&to=6`;
