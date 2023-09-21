@@ -273,7 +273,7 @@ $(document).ready(function () {
 
 
      function fetchAndDisplayCocktails(searchQuery) {
-        const apiKey = "6fc6862a34msh0a6b9d463a6e54ep1fcdb9jsn6c012689b6b1";
+        const apiKey = "";
         const apiUrl = "https://the-cocktail-db.p.rapidapi.com/search.php";
 
         $.ajax({
